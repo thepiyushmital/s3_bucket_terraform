@@ -10,7 +10,5 @@ resource "aws_s3_bucket" "feedback-mechanism-handler-bucket" {
   versioning {
           enabled = var.versioning
       }
- 
-
   tags = var.tags
 }
