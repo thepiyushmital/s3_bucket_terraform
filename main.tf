@@ -5,7 +5,8 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "feedback-mechanism-handler-bucket" {
-  bucket_prefix = var.bucket_prefix
+  bucket = "feedback-mechanism-handler-bucket"
+  #bucket_prefix = var.bucket_prefix
   acl    = var.acl
   versioning {
           enabled = var.versioning
